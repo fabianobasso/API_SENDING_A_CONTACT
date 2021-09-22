@@ -1,61 +1,84 @@
 
-# API Send Email
+# API SENDING A CONTACT
 
+**Project license**   
 [![GitHub](https://img.shields.io/github/license/fabianobasso/Jogo_De_Xadrez)](https://github.com/fabianobasso/api_send_email/blob/master/LICENSE) 
 
-# 
+## Description
+Api developed for sending email, with html support sends to api the data of a form with message, email for contact and name.
 
+## Settings
+- Create a file named .env in the project's root folder
 
-<!-- ## Objetivo
-É bem simples de usar você vai cadastrar uma despesa com dia, mês, ano, tipo da despesa, uma descrição e o valor. que pode ser consultado a qualquer momento aqui pode ser feita mostrando o total de despesas cadastradas ou pode ser feita por filtros para mostrar uma despesa específica. 
+<br>
 
+- Edit the env file you just created:
+```env
+HOST_EMAIL='' # Your smtp service
+SERVICE='' # Email service exempla(gmail)
+PORT= # Email sending port
+SECURE= # If the port is 465 put true for any other put false
+USER_EMAIL='' # user email
+PASS_EMAIL='' # pass email
+TO_SEND='' # Only configure if it is to send to a specific email always
 
-## Layout
+```
 
-#### Tela de cadastro:
-![Cadastro](https://github.com/fabianobasso/assets/blob/master/img/OrcamentoPessoal/Cadastro.png)
+<br>
 
-#### Tela de consulta:
-![Cadastro2](https://github.com/fabianobasso/assets/blob/master/img/OrcamentoPessoal/consulta1.png)
-
-#### Local Storage:
-
-![Cadastro2](https://github.com/fabianobasso/assets/blob/master/img/OrcamentoPessoal/LocalStorage.png)
-
-&nbsp;
-&nbsp;
-# Tecnologias utilizadas
-
-## Back end
-- JavaScript
-
-## Front end
-- HTML5
-- CSS
-- BOOTSTRAP 4
-
-# Como executar o projeto
-
-Pré-requisitos: Navegador (Chrome ou Firefox)
-
+- Install project dependencies:
 ```bash
-# clonar repositório
-git clone https://github.com/fabianobasso/Orcamento_Pessoal.git
+npm i
+```
 
-# executar o projeto
-para abrir o app é só abrir o arquivo index.html no navegador
+<br>
 
-# aviso importante
-O app usa para armazenar seus dado no LocalStorage do seu navegador
-``` -->
+- Run the api:
+```bash
+npm run start
+```
 
-# Autor
+<br>
 
-Fabiano Basso Antonio.
+- Test the api, use postman or Thunder Client(vsCode)
+```php
+# send a request to
+http://localhost:8081/send_mail
+
+# with the data of a form
+key = name      value = any name
+key = email     value = any email
+key = msg       value = any text
+
+# Expected response a json with true or false and a success or error message
+{
+    send: true
+    msg: Sent with success
+}
+
+# or error message
+{
+    send: false
+    msg: Try again later
+}
+```
+
+- If the send message returns false to consult the log **/logs/send_error_log.txt**
+
+
+<br>
+<br>
+<br>
+
+## Author
+
+**Fabiano Basso Antonio**
 
 I also work as a **FULL STACK DEVELOPER** freelancer, if you have a project, this is the right time to get it off the ground, we can talk, and I'll present the best solution for you.
 
-#### Meus Contatos:
+<br>
+
+### My contacts:
 **Portfólio:** https://fabianobasso.github.io/
 <br>
 **Linkedin:** https://www.linkedin.com/in/fabiano-basso
