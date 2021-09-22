@@ -72,7 +72,7 @@ key = msg       value = any text
 
 ## Author
 
-**Fabiano Basso Antonio**
+### **Fabiano Basso Antonio**
 
 I also work as a **FULL STACK DEVELOPER** freelancer, if you have a project, this is the right time to get it off the ground, we can talk, and I'll present the best solution for you.
 
