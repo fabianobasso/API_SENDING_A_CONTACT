@@ -48,7 +48,7 @@ http://localhost:8081/send_mail
 # with the data of a form
 key = name      value = any name
 key = email     value = any email
-key = message       value = any text
+key = message   value = any text
 
 # Expected response a json with true or false and a success or error message
 {
