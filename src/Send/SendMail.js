@@ -9,7 +9,7 @@ class SendMailNodeMailer {
     constructor(obj) {
         this.name = obj.name
         this.email = obj.email
-        this.msg = obj.msg
+        this.msg = obj.message
         this.nodeMailer = require('nodemailer') // Importa o nodemailer
     }
 
