@@ -43,7 +43,7 @@ npm run start
 - Test the api, use postman or Thunder Client(vsCode)
 ```php
 # send a request to
-http://localhost:8081/send_mail
+http://localhost:8081/send_contact
 
 # with the data of a form
 key = name      value = any name
