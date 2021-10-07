@@ -7,6 +7,8 @@
 ## Description
 Api developed for sending email, with html support sends to api the data of a form with message, email for contact and name.
 
+---
+
 ## Settings
 - Create a file named .env in the project's root folder
 
@@ -65,22 +67,18 @@ key = message   value = any text
 
 - If the send message returns false to consult the log **/logs/send_error_log.txt**
 
-
-<br>
-<br>
-<br>
+---
 
 ## Author
 
-### **Fabiano Basso Antonio**
+**Fabiano Basso Antonio**
 
 I also work as a **FULL STACK DEVELOPER** freelancer, if you have a project, this is the right time to get it off the ground, we can talk, and I'll present the best solution for you.
 
-<br>
 
-### My contacts:
+## My contacts:
 **Portfólio:** https://fabianobasso.github.io/
-<br>
+
 **Linkedin:** https://www.linkedin.com/in/fabiano-basso
-<br>
-**Whatsapp:** [Send Menssage](https://api.whatsapp.com/send?phone=5519999979098)
+
+**Whatsapp:** [Send Message](https://api.whatsapp.com/send?phone=5519999979098)
